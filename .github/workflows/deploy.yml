@@ -29,8 +29,9 @@ jobs:
         run: mvn clean package
 
       - name: Rename the artifact
-        run: Copy-Item -Path target/backend-social-network-1.0-SNAPSHOT.jar backend-social-network-${{ github.sha }}.jar
-
+        run:
+          Set-Location -Path target
+          Copy-Item -Path target/backend-social-network-1.0-SNAPSHOT.jar -Destination ../backend-social-network-${{ github.sha }}.jar
       - name: Save the artifact
         uses: actions/upload-artifact@main
         with:
