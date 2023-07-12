@@ -45,6 +45,3 @@ jobs:
           uses: actions/download-artifact@main
           with:
             name: backend-social-network
-
-        - name: Fake deploy
-          run: ls backend-social-network*.jar
