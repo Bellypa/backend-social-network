@@ -1,15 +1,12 @@
 name: Only Tests
-
 on:
   push:
-    branches-ignore:
+    branches:
       - main
 
 jobs:
   run-all-tests:
-    runs-on:
-      - self-hosted
-      - label-1
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v3
