@@ -11,7 +11,7 @@
 	<groupId>com</groupId>
 	<artifactId>backend-social-network</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>backend-social-network</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
